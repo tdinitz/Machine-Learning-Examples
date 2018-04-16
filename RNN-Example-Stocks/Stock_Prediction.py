@@ -88,7 +88,7 @@ model.compile(loss='mse', optimizer='rmsprop')
 print ('compilation time : ', time.time() - start)
 
 #Train Model
-model.fit(trainX,trainY,batch_size=128,nb_epoch=10,validation_split=0.05)
+model.fit(trainX,trainY,batch_size=128,nb_epoch=10,validation_split=0.05,shuffle=False)
 
 ##### THINGS TO ADD
 # Scale values (optional)
